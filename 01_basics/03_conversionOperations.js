@@ -47,3 +47,17 @@ console.log("2" * "2"); // 4 (both strings '2' are converted to numbers 2 and th
 console.log("2" - "2"); // 0 (both strings '2' are converted to numbers 2 and then subtracted)
 console.log("2" / "2"); // 1 (both strings '2' are converted to numbers 2 and then divided)
 console.log("2" + "2"); // '22' (string concatenation)
+console.log("2" + 2 + 2); // '222' (string concatenation)
+console.log(2 + 2 + "2"); // '42' (number addition followed by string concatenation)
+/* reason: when we have a string in an expression, the result will be a string. 
+So in the first case, "2" + 2 will give '22' and then '22' + 2 will give '222'. 
+In the second case, 2 + 2 will give 4 and then 4 + "2" will give '42'.*/   
+/*
+ecma will inform more about the type conversion rules in javascript in future, 
+but for now we can say that when we have a string in an expression, the result will be a string.
+When we have a number in an expression, the result will be a number.
+When we have a boolean in an expression, the result will be a boolean.
+When we have null in an expression, the result will be null.
+When we have undefined in an expression, the result will be undefined.
+When we have a symbol in an expression, the result will be a symbol.
+*/
