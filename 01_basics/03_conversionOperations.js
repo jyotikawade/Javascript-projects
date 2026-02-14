@@ -26,3 +26,24 @@ console.log(isloggedIn, typeof isloggedIn); // false 'boolean'
 
 //0, "", null, undefined, NaN => false
 //1, " ", [], {} => true  
+
+// operations
+let value = "hello" + " " + "world"
+console.log(value); // 'hello world'
+
+let value =3
+let negValue = -value
+console.log(negValue); // -3
+
+let isLoggedIn = true
+console.log(!isLoggedIn); // false
+
+console.log(2+2); // 4
+console.log("2" + 2); // '22' (string concatenation)
+console.log("2" * 2); // 4 (string '2' is converted to number 2 and then multiplied)
+console.log("2" - 2); // 0 (string '2' is converted to number 2 and then subtracted)
+console.log("2" / 2); // 1 (string '2' is converted to number 2 and then divided)
+console.log("2" * "2"); // 4 (both strings '2' are converted to numbers 2 and then multiplied)
+console.log("2" - "2"); // 0 (both strings '2' are converted to numbers 2 and then subtracted)
+console.log("2" / "2"); // 1 (both strings '2' are converted to numbers 2 and then divided)
+console.log("2" + "2"); // '22' (string concatenation)
