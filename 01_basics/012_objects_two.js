@@ -25,3 +25,15 @@ const targetObject = {};
 Object.assign(targetObject, person1, person2);
 console.log(targetObject); //{ name: "Jane", age: 30, isStudent: false, email: "test@example.com" }
 
+// to get keys and values of an object, we can use the Object.keys() and Object.values() methods
+console.log(Object.keys(mergedPerson));
+console.log(Object.values(mergedPerson));
+
+//to get entries of an object, we can use the Object.entries() method
+console.log(Object.entries(mergedPerson)); //[["name", "Jane"], ["age", 30], ["isStudent", false], ["email", "
+
+//hasownproperty() method is used to check if an object has a specific property
+console.log(mergedPerson.hasOwnProperty("name")); //true (mergedPerson has the name property)
+console.log(mergedPerson.hasOwnProperty("address")); //false (mergedPerson does not have the address property)
+
+
