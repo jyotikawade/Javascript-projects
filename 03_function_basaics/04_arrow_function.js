@@ -52,3 +52,13 @@ console.log(add2(5,10)); //15
 //or
 const add3 = (x,y) => (x + y);
 console.log(add3(5,10)); //15
+
+ const myarray = [1,2,3,4,5];
+ myarray.forEach(function(element){
+    console.log(element);
+ });
+
+//or using arrow function
+myarray.forEach((element) => {
+    console.log(element);
+}); 

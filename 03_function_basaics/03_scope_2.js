@@ -33,7 +33,7 @@ function addone(num){
 addone(5); //6
 // console.log(num); //error: num is not defined
 
-console.log(addTwo(5)); //7
+console.log(addTwo(5));  //eroor: addTwo is not defined
 const addTwo = function(num){
     return num + 2;
 }
