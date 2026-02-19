@@ -41,3 +41,8 @@ myModule.publicFunction(); // This will output: I am private
 ((name) => {
     console.log("Hello, " + name);
 })("Bob"); //This will output: Hello, Bob
+
+//named IIFE
+(function namedIIFE(){
+    console.log("I am a named IIFE");
+})(); //This will execute the named function immediately after defining it. The name can be useful for debugging purposes, as it will show up in stack traces.
